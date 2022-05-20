@@ -1,9 +1,31 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
+import Selector from "../ui/selector";
 
 const Home: NextPage = () => {
   return (
-    <h1>Tejat</h1>
-  )
-}
+    <Selector
+      options={[
+        {
+          description: "First",
+          action: () => {
+            alert("first");
+          },
+        },
+        {
+          description: "Second",
+          action: () => {
+            alert("second");
+          },
+        },
+        {
+          description: "i am here!",
+          action: () => {
+            alert("i am here");
+          },
+        },
+      ]}
+    />
+  );
+};
 
-export default Home
+export default Home;
