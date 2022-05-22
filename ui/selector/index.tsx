@@ -1,3 +1,5 @@
+import selectorBaseStyle from './style.module.css'
+
 interface SelectorPropItem {
   description: string;
   action: Function;
@@ -11,12 +13,12 @@ interface SelectorProps {
 // TODO: there should be a default message when no option
 const Selector: React.FC<SelectorProps> = ({ options }) => {
   return (
-    <div className="selector">
+    <div className={selectorBaseStyle.selector}>
       {options.length > 0 ? (
         options.map((option) => {
           return (
             <div
-              className="selector-option"
+              className={selectorBaseStyle.selectorOption}
               onClick={() => {
                 option.action();
               }}
