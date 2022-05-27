@@ -15,13 +15,14 @@ const Selector: React.FC<SelectorProps> = ({ options }) => {
   return (
     <div className={selectorBaseStyle.selector}>
       {options.length > 0 ? (
-        options.map((option) => {
+        options.map((option, index) => {
           return (
             <div
               className={selectorBaseStyle.selectorOption}
               onClick={() => {
                 option.action();
               }}
+              key={index}
             >
               {option.description}
             </div>
