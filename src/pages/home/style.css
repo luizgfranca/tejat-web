@@ -1,0 +1,10 @@
+.mainPage {
+    display: flex;
+}
+
+.selectorContainer {
+    flex-grow: 1;
+}
+.gridContainer {
+    flex-grow: 4;
+}
