@@ -1,4 +1,28 @@
-.mainPage {
+.navMenuContainer {
+    background-color: #fefefe;
+}
+
+.navMenuItems {
+    display: flex;
+}
+
+.navMenuItem {
+    padding: 1rem 1rem;
+}
+
+a.navMenuLink {
+    text-decoration: none;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+a.navMenuLink:hover {
+    background-color: #fafafa;
+    border: #cccccc 1px solid;
+    color: #111122;
+}
+
+.contentContainer {
     display: flex;
 }
 
