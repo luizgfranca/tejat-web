@@ -20,20 +20,6 @@ const Home: React.FC = () => {
 
   return (
     <div className={"mainPage"}>
-      <div className="navMenuContainer">
-        <div className="navMenuItems">
-          <Link className="navMenuLink" to={'/'}>
-            <div className="navMenuItem">
-              Transações
-            </div>
-          </Link>
-          <Link className="navMenuLink" to={'/account/create'}>
-            <div className="navMenuItem">
-              Nova conta
-            </div>
-          </Link>
-        </div>
-      </div>
       <div className="contentContainer">
         <div className={"selectorContainer"}>
           <Selector
