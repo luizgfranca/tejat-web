@@ -12,13 +12,15 @@ export default class Transaction {
 
     createdAtFormattedStr?: string;
 
-    constructor(dto: TransactionDto) {
-        this.id = dto.id;
-        this.description = dto.description;
-        this.value = dto.value;
-        this.createdAt = dto.createdAt;
-        this.origin = dto.origin;
-        this.destination = dto.destination;
+    constructor(dto?: TransactionDto) {
+        if(dto) {
+            this.id = dto.id;
+            this.description = dto.description;
+            this.value = dto.value;
+            this.createdAt = dto.createdAt;
+            this.origin = dto.origin;
+            this.destination = dto.destination;
+        }
     }
 
     public formatDate(formatString: string) {

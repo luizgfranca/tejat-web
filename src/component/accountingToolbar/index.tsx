@@ -11,6 +11,9 @@ const AccountingToolbar: React.FC = () => {
         <Link className="accountToolbarLink" to={"/account/create"}>
           <div className="accountToolbarItem">New Account</div>
         </Link>
+        <Link className="accountToolbarLink" to={"/transaction/create"}>
+          <div className="accountToolbarItem">New Transaction</div>
+        </Link>
       </div>
     </div>
   );

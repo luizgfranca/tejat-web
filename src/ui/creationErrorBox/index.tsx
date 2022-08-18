@@ -4,14 +4,14 @@ type CreationErrorProps = {
     message: string;
 }
 
-const CreationErrorBox: React.FC<CreationErrorProps> = (props) => {
+const ErrorBox: React.FC<CreationErrorProps> = (props) => {
     if (!props.show) return null;
 
     return (
-        <div className="creation-error">
+        <div className="error-box">
             {props.message}
         </div>
     )
 }
 
-export default CreationErrorBox;
+export default ErrorBox;

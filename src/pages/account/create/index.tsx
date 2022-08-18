@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { submitAccountCreation, ValidationSchema } from "./action";
-import CreationErrorBox from "../../../component/creationErrorBox";
+import ErrorBox from "../../../ui/creationErrorBox";
 import './style.css';
 
 const CreateAccountPage: React.FC = () => {
@@ -11,7 +11,7 @@ const CreateAccountPage: React.FC = () => {
         <div className="create-account-page">
             <h1>Create a new account</h1>
 
-            <CreationErrorBox 
+            <ErrorBox 
                 show={hasCreationError}
                 message={'There was an error in the creation of the new account'}
             />

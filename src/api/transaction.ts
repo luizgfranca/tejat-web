@@ -6,9 +6,9 @@ const RESOURCE = "/transaction";
 
 interface CreateTransactionPayload {
   description: string;
-  value: string;
-  origin: number;
-  destinaion: number;
+  value: number;
+  origin: string;
+  destination: string;
 }
 
 export async function getTransactions(): Promise<AxiosResponse<TransactionDto[]>> {
